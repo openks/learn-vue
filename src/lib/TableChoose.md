@@ -1,0 +1,14 @@
+请看案例
+```js
+<div>
+    <el-button
+        type="primary"
+        @click="showFilterTable=!showFilterTable">
+        点击查看效果
+    </el-button>
+    <table-choose
+        :colList="colListData"
+        :visiable.sync="showFilterTable">
+    </table-choose>
+</div>
+```

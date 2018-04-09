@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+- [x] 添加vue-styleguide
+- [ ] 把styleguide文档部署到gitpage上去
 ## Build Setup
 
 ``` bash
