@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import Hello from '@/components/Hello';
 import Test from '@/components/Test';
 import Login from '@/components/Login';
+import Demo from './demo.router';
 
 Vue.use(Router);
 
@@ -23,5 +24,6 @@ export default new Router({
       name: 'Login',
       component: Login,
     },
+    ...Demo,
   ],
 });
