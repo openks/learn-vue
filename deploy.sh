@@ -1,5 +1,8 @@
 #!/bin/bash
-
+# travis-encrypt -r username/repository GH_TOKEN=[the token you created before]
+# travis-encrypt -r openks/learn-vue GH_Token=99***********e
+# https://github.com/steveklabnik/automatically_update_github_pages_with_travis_example
+# 加密生成 .travis.yml 文件需要配置的 global/secure
 set -o errexit -o nounset
 
 if [ "$TRAVIS_BRANCH" != "master" ]
