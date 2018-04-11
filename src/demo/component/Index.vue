@@ -1,14 +1,19 @@
 <template>
-<div>
+<!--
+弹框使用主要按钮
+跳页使用默认按钮
+ -->
+<div class="index-wp">
   <el-button type="primary"
+             plain
              size="small"
              @click="testBtnClick('showDialog1')">根据不同参数动态设置校验规则</el-button>
-  <el-button type="primary"
-             size="small"
+  <el-button size="small"
              @click="pushToUrl('/compa')">element-ui通用表格</el-button>
-  <el-button type="primary"
-             size="small"
+  <el-button size="small"
              @click="pushToUrl('/compc')">表格行首添加单选按钮</el-button>
+  <el-button size="small"
+             @click="pushToUrl('/compd')">手机号银行卡的同步显示功能</el-button>
   <comp-b :visible.sync="showDialog1"></comp-b>
 </div>
 </template>
@@ -47,4 +52,11 @@ export default {
 </script>
 
 <style lang="scss">
+.index-wp {
+  display: flex;
+  flex-wrap: wrap;
+  .el-button {
+    margin: 5px;
+  }
+}
 </style>
