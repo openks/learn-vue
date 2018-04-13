@@ -3,7 +3,9 @@
 > A Vue.js project
 
 - [x] 添加vue-styleguide
-- [ ] 把styleguide文档部署到gitpage上去
+- [x] 把styleguide文档部署到pages上去
+- [x] 把element-ui和vue作为外部资源使用cdn方式引入
+- [ ] 把文档和项目功能集成起来部署到pages上去
 ## Build Setup
 
 ``` bash

@@ -11,6 +11,12 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+  externals: {
+     //key 是 require 的包名，value 是全局的变量。
+     'vue': 'Vue',
+     'vue-router': 'VueRouter',
+     'element-ui': 'element-ui'
+   },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
