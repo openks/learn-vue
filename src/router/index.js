@@ -5,6 +5,7 @@ import Login from '@/components/Login';
 import Demo from './demo.router';
 
 export default new Router({
+  base: '/learn-vue/',
   routes: [
     {
       path: '/',
