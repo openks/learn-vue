@@ -13,7 +13,12 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-cd styleguide
+rm -rf www
+mkdir www
+mv dist www
+mv styleguide www/dist
+
+cd www/dist
 
 git init
 git config user.name "openks"
