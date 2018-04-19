@@ -14,6 +14,8 @@
              @click="pushToUrl('/compc')">表格行首添加单选按钮</el-button>
   <el-button size="small"
              @click="pushToUrl('/compd')">手机号银行卡的同步显示功能</el-button>
+  <el-button size="small"
+             @click="pushToUrl('/compe')">flex布局下不同浏览器对子元素高度100%支持度不一样</el-button>
   <comp-b :visible.sync="showDialog1"></comp-b>
 </div>
 </template>

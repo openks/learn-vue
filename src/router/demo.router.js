@@ -2,6 +2,7 @@ const Demo = () => import('@/demo/component/Index');
 const CompA = () => import('@/demo/component/CompA');
 const CompC = () => import('@/demo/component/CompC');
 const CompD = () => import('@/demo/component/CompD');
+const CompE = () => import('@/demo/component/CompE');
 
 export default [
   {
@@ -23,5 +24,10 @@ export default [
     path: '/compd',
     name: 'compd',
     component: CompD,
+  },
+  {
+    path: '/compe',
+    name: 'compe',
+    component: CompE,
   },
 ];
