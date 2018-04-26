@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer"
+          content="webkit">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge,chrome=1" />
+    <meta name="renderer"
+          content="webkit" />
+    <title>BFC 可以包含浮动的元素（清除浮动）</title>
+    <link rel="stylesheet"
+          href="">
+    <script src=""
+            charset="utf-8"></script>
+    <style>
+        .wrapper {
+            border: 1px solid #000;
+            background: pink;
+        }
+
+        .inner {
+            width: 100px;
+            height: 100px;
+            background: #eee;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <p>由于容器内元素#eee浮动，脱离了文档流，所以容器只剩下 2px 的边距高度。<br>
+        如果通过overflow:hidden触发容器的 BFC，那么容器将会包裹着浮动元素。</p>
+    <div class="wrapper">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>

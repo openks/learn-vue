@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer"
+          content="webkit">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge,chrome=1" />
+    <meta name="renderer"
+          content="webkit" />
+    <title>BFC 可以阻止元素被浮动元素覆盖</title>
+    <style type="text/css">
+        .d1 {
+            height: 100px;
+            width: 100px;
+            float: left;
+            background: lightblue
+        }
+
+        .d2 {
+            width: 200px;
+            height: 200px;
+            background: #eee
+        }
+    </style>
+</head>
+
+<body>
+    <p>这时候其实第二个元素有部分被浮动元素所覆盖，(但是文本信息不会被浮动元素所覆盖)<br> 如果想避免元素被覆盖，可触第二个元素的 BFC 特性，在第二个元素中加入overflow属性<br> overflow 除了 visible 以外的值 (hidden、auto、scroll)均可</p>
+    <div class='d1'
+         style="">我是一个左浮动的元素</div>
+    <div class='d2'
+         style="">我是一个没有设置浮动, 也没有触发 BFC 元素, </div>
+    <h2>只要元素满足下面任一条件即可触发 BFC 特性：</h2>
+    <p>
+        body 根元素<br> 浮动元素：float 除 none 以外的值<br> 绝对定位元素：position (absolute、fixed)<br> display 为 inline-block、table-cells、flex<br> overflow 除了 visible 以外的值 (hidden、auto、scroll)<br>
+    </p>
+</body>
+
+</html>
