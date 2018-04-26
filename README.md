@@ -1,11 +1,16 @@
 # learn-vue
 
-> A Vue.js project
+[![](https://travis-ci.org/openks/learn-vue.svg)](https://travis-ci.org/openks/learn-vue)
+
+styleguide在[这里](https://openks.github.io/learn-vue/styleguide/)
+组件demo在[这里](https://openks.github.io/learn-vue/#/demo)
+纯静态页面在[这里](https://openks.github.io/learn-vue/static/demo/BFC_1.html)
 
 - [x] 添加vue-styleguide
 - [x] 把styleguide文档部署到pages上去
 - [x] 把element-ui和vue作为外部资源使用cdn方式引入
-- [ ] 把文档和项目功能集成起来部署到pages上去
+- [x] 把文档和项目功能集成起来部署到pages上去
+
 ## Build Setup
 
 ``` bash
